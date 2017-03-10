@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+ 
+<config>
+    <modules>
+        <Julia_GiftProduct>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Julia_GiftProduct>
+    </modules>
+</config>

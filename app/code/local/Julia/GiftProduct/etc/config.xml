@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Julia_GiftProduct>
+            <version>0.1.0</version>
+        </Julia_GiftProduct>
+    </modules>
+    <frontend>
+        <events>
+            <checkout_cart_product_add_after>
+                <observers>
+                    <Julia_GiftProduct_Model_Observer>
+                        <type>singleton</type>
+                        <class>Julia_GiftProduct_Model_Observer</class>
+                        <method>Giftproduct</method>
+                    </Julia_GiftProduct_Model_Observer>
+                </observers>
+            </checkout_cart_product_add_after>  
+        </events>
+    </frontend>
+    <global>
+        <models>
+            <giftproduct>
+                <class>Julia_GiftProduct_Model</class>
+            </giftproduct>
+        </models>
+        <helpers>
+            <giftproduct>
+                <class>Julia_GiftProduct_Helper</class>
+            </giftproduct>
+        </helpers>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+               
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <giftproduct>
+                                            <title>Extension Options</title>
+                                        </giftproduct>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+    <default>
+        <giftproduct>
+            <giftproduct_group>                
+                <limit>500</limit>  
+                <product_id>0</product_id>       
+            </giftproduct_group>      
+        </giftproduct>
+    </default>
+</config>

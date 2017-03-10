@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <giftproduct translate="label" module="giftproduct">
+            <label>Gift Product OPtions</label>
+            <sort_order>100</sort_order>
+        </giftproduct>
+    </tabs>
+    <sections>
+        <giftproduct translate="label" module="giftproduct">
+            <label>Extension Options</label>
+            <tab>giftproduct</tab>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+ 
+            <groups>
+                <giftproduct_group translate="label" module="giftproduct">
+                    <label>My Extension Options</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1000</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+ 
+                    <fields>
+                        <limit translate="label">
+                            <label>Cart total to get gift: </label>
+                            <comment>Enter numeric value</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </limit>
+                        <product_id translate="label">
+                            <label>Product id: </label>
+                            <comment>Enter integer value</comment>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </product_id>
+                    </fields>
+                </giftproduct_group>
+            </groups>
+        </giftproduct>
+    </sections>
+</config>
